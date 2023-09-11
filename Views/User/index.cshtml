@@ -1,0 +1,13 @@
+@{
+    ViewData["Title"] = "Log in or Register";
+    Layout = "_NoNavNoFoot";
+}
+
+
+<div class="text-center">
+    <h1>You better work or I will blow this up</h1>
+    <div class="row">
+    @await Html.PartialAsync("_Register")
+    @await Html.PartialAsync("_Login")
+</div>
+</div>
